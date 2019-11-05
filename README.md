@@ -22,9 +22,11 @@ Then watch the initial load:
 
 You can see code for the route and its data loads in parallel. If you click a link, you'll see that data is also requested immediately -- we're not fetching for the code to load (which can take a while) to start fetching its data.
 
-You might be wondering: how is this different from *always* fetching all the data? This might seem similar to how routing systems worked before fetch-on-render became popular. However, the crucial difference is that *we can start rendering sooner than we have all the data*. The User page shows an example of this: it only "waits" for the user profile data, but wraps less important parts into Suspense so they can render when they're ready. A SuspenseList then coordinates their reveal so the page doesn't jump due to out-of-order responses.
+You might be wondering: how is this different from *always* fetching all the data? This might seem similar to how routing systems worked before fetch-on-render became popular. However, the crucial difference is that **we can show content as soon as we have enough data — while some of it is still being fetched**. The User page shows an example of this: it only "waits" for the user profile data, but wraps less important parts into Suspense so they can render when they're ready. A SuspenseList then coordinates their reveal so the page doesn't jump due to out-of-order responses.
 
-In other words, Suspense lets us combine the technically optimal solution (start fetching UI and code as early as we know we'll need them in parallel) with a solution that's optimal for human perception (loading states placed at intentional boundaries, with a reveal order that prevents jumps).
+Also note that **we don't centralize the data fetching logic in one place -- instead, it forms a parallel file tree to our components**. In the actual Relay code, we don't need to do that because a compiler creates that "parallel tree" for us by extracting fragments from React components. So there are multiple ways we could accomplish this, but I went for a manual one in this example to demonstrate the mechanics. We don't want to leave the data fetching code *in* the component because then we lose the ability to load its code and data in parallel.
+
+To sum up, Suspense lets us combine the technically optimal solution (start fetching UI and code as early as we know we'll need them in parallel) with a solution that's optimal for human perception (loading states placed at intentional boundaries, with a reveal order that prevents jumps).
 
 ## Exploring the Project
 
