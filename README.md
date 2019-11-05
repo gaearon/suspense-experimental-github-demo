@@ -4,7 +4,7 @@
 
 I made this demo to complement [Suspense for Data Fetching](https://reactjs.org/docs/concurrent-mode-suspense.html) and [Concurrent UI Patterns](https://reactjs.org/docs/concurrent-mode-patterns.html) documentation. **It is highly experimental and primarily aimed at library authors!**
 
-**For a full explanation, [read here](https://gist.github.com/gaearon/71a03edb0645685c1119c80ecad1d082).**
+**For a full explanation about this particular demo, [read here](https://gist.github.com/gaearon/71a03edb0645685c1119c80ecad1d082).** It uses a REST GitHub API with render-as-you-fetch pattern and a custom router.
 
 ## A Better Demo
 
