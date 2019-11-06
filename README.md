@@ -6,6 +6,10 @@ I made this demo to complement [Suspense for Data Fetching](https://reactjs.org/
 
 For a full explanation about this particular demo, **[read here](https://gist.github.com/gaearon/71a03edb0645685c1119c80ecad1d082).** It uses a REST GitHub API with render-as-you-fetch pattern and a custom router.
 
+## A Blog Post
+
+[Joe Savona](https://twitter.com/en_JS) from the Relay team wrote a blog post that dives deeper into these topics: https://reactjs.org/blog/2019/11/06/building-great-user-experiences-with-concurrent-mode-and-suspense.html. Check it out!
+
 ## A Better Demo
 
 This demo took me a few hours and it's pretty rough. Its goal was to show one possible way to integrate Suspense with REST APIs without losing benefits of render-as-you-fetch paradigm.
