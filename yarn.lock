@@ -1518,9 +1518,9 @@ acorn-walk@^6.0.1:
   integrity sha512-7evsyfH1cLOCdAzZAd43Cic04yKydNx0cF+7tiA19p1XnLLPU4dpCQOqpjqwokFe//vS0QqfqqjCS2JkiIs0cA==
 
 acorn@^5.5.3:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
-  integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
+  integrity sha512-1D++VG7BhrtvQpNbBzovKNc1FLGGEE/oGe7b9xJm/RFHMBeUaUGpluV9RLjZa47YFdPcDAenEYuq9pQPcMdLJg==
 
 acorn@^6.0.1, acorn@^6.0.4, acorn@^6.2.1:
   version "6.3.0"
@@ -7997,7 +7997,7 @@ react-dev-utils@^9.1.0:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dom@^0.0.0-experimental-f6b8d31a7:
+react-dom@0.0.0-experimental-f6b8d31a7:
   version "0.0.0-experimental-f6b8d31a7"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-f6b8d31a7.tgz#a3b1381fcc623a6328748ef37b52d47094a2ec5c"
   integrity sha512-3qgTzKT6CFWuFK0daJfXGe/ZHRRYKoCNZhQf1mMPJd3owZDh1/PaZpsq3M+ag6jYAjA9cmSYZO2seRxP7+NEhA==
@@ -8078,7 +8078,7 @@ react-scripts@3.2.0:
   optionalDependencies:
     fsevents "2.0.7"
 
-react@^0.0.0-experimental-f6b8d31a7:
+react@0.0.0-experimental-f6b8d31a7:
   version "0.0.0-experimental-f6b8d31a7"
   resolved "https://registry.yarnpkg.com/react/-/react-0.0.0-experimental-f6b8d31a7.tgz#6cccd1f8cc4231c1737a95d7621732dcc8e5400e"
   integrity sha512-Qi05fkPeXNcP0zYODLDzij3j9H4lJx7yU35JD84fG+fWbUq6NX/aa3Q3W6DqezVXIazdwVDeC8EJ6IT4i1mhkQ==
